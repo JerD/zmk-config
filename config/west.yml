@@ -2,12 +2,24 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: sadekbaroudi
+      url-base: https://github.com/sadekbaroudi
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
+    # This is a fork of zmk which includes mouse input, it can be removed once it has been merged to zmk
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: petejohanson
+      revision: feat/pointers-move-scroll
       import: app/west.yml
+    # Re-enable once the above is merged
+    # - name: zmk
+    #   remote: zmkfirmware
+    #   revision: main
+    #   import: app/west.yml
+    - name: zmk-fingerpunch-controllers
+      remote: sadekbaroudi
+      revision: main
+      import: config/deps.yml
   self:
     path: config
