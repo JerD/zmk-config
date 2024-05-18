@@ -2,24 +2,26 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: sadekbaroudi
-      url-base: https://github.com/sadekbaroudi
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
+    # Alt sources
+    # - name: sadekbaroudi
+    #   url-base: https://github.com/sadekbaroudi
+    # - name: petejohanson
+    #   url-base: https://github.com/petejohanson
   projects:
-    # This is a fork of zmk which includes mouse input, it can be removed once it has been merged to zmk
+    # Default source
     - name: zmk
-      remote: petejohanson
-      revision: feat/pointers-move-scroll
-      import: app/west.yml
-    # Re-enable once the above is merged
-    # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
-    #   import: app/west.yml
-    - name: zmk-fingerpunch-controllers
-      remote: sadekbaroudi
+      remote: zmkfirmware
       revision: main
-      import: config/deps.yml
+      import: app/west.yml
+    # This is a fork of zmk which includes mouse input, it can be removed once it has been merged to zmk
+    # - name: zmk
+    #   remote: petejohanson
+    #   revision: feat/pointers-move-scroll
+    #   import: app/west.yml
+    # This is the fingerpunch ZMK source, use this for potential trackball stuff
+    # - name: zmk-fingerpunch-controllers
+    #   remote: sadekbaroudi
+    #   revision: main
+    #   import: config/deps.yml
   self:
     path: config
