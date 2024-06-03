@@ -21,7 +21,7 @@
                 tapping-term-ms = <200>;
                 flavor = "balanced";
                 bindings = <&kp>, <&kp>;
-                quick-tap-ms = -1;
+                quick-tap-ms = <-1>;
             };
         };
         
