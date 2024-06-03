@@ -19,7 +19,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 tapping-term-ms = <200>;
-                quick-tap-ms = <0>;
+                quick-tap-ms = <150>;
                 flavor = "balanced";
                 bindings = <&kp>, <&kp>;
             };
@@ -30,7 +30,7 @@
 
                 default_layer {
                         bindings = <
-        &kp LS(Q)       &kp W           &lt SYM E       &lt ACT R   &kp T                       &kp Y           &lt ACT U   &lt SYM I   &kp O           &kp P   
+        &kp Q           &kp W           &lt SYM E       &lt ACT R   &kp T                       &kp Y           &lt ACT U   &lt SYM I   &kp O           &kp P   
         &kp A           &hm LSHIFT S    &hm LCTRL D     &hm LALT F  &hm LGUI G                  &hm LGUI H      &hm LALT J  &hm LCTRL K &hm LSHIFT L    &hm SQT LS(N2)
         &kp LSHFT       &kp Z           &kp X           &kp C       &kp V                       &kp B           &kp N       &kp M       &kp COMMA       &kp DOT
                                         &kp LGUI        &mkp MB2    &mkp MB1                    &lt SYM SPACE   &mo SYM     &kp RALT
@@ -47,8 +47,8 @@
 
                 symbol_layer {
                         bindings = <
-        &kp QMARK       &kp PLUS        &kp EQUAL       &kp LS(N8)              &kp LS(NUHS)                &kp RA(N4)  &kp UNDER   &mt RBKT LBKT   &kp LS(NUBS)            &mt LS(N9) LS(N0)
-        &kp LS(N7)      &kp SEMI        &kp LS(N4)      &mt NUBS FSLH           &kp GRAVE                   &kp NUHS    &none       &kp COLON       &mt LS(COMMA) LS(DOT)   &kp LS(N2)
+        &kp QMARK       &kp PLUS        &kp EQUAL       &kp LS(N8)              &kp LS(NUHS)                &kp RA(N4)  &kp UNDER   &mt RBKT LBKT   &kp LS(NUBS)            &mt LS(N0) LS(N9)
+        &kp LS(N7)      &kp SEMI        &kp LS(N4)      &mt NUBS FSLH           &kp GRAVE                   &kp NUHS    &none       &kp COLON       &mt LS(DOT) LS(COMMA)   &kp LS(N2)
         &kp LSHFT       &kp LS(N5)      &kp LS(SQT)     &mt LS(RBKT) LS(LBKT)   &kp LS(N6)                  &kp B       &kp LS(N1)  &kp MINUS       &kp LS(COMMA)           &kp LS(DOT)
                                         &kp LGUI        &trans                  &trans                      &trans      &trans      &kp RALT
                         >;
