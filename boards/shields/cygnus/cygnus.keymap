@@ -33,7 +33,7 @@
                 default_layer {
                         bindings = <
         &kp Q           &kp W           &lt SYM E       &lt ACT R   &kp T                       &kp Y           &lt ACT U   &lt SYM I   &kp O           &kp P   
-        &kp A           &hm LSHIFT S    &hm LCTRL D     &hm LALT F  &hm LGUI G                  &hm LGUI H      &hm LALT J  &hm LCTRL K &hm LSHIFT L    &hm SQT LS(N2)
+        &kp A           &hm LSHIFT S    &hm LCTRL D     &hm LALT F  &hm LGUI G                  &hm LGUI H      &hm RALT J  &hm LCTRL K &hm RSHIFT L    &hm SQT LS(N2)
         &kp LSHFT       &kp Z           &kp X           &kp C       &kp V                       &kp B           &kp N       &kp M       &mt COMMA DOT   &kp DOT
                                         &tog NUM        &mkp MB2    &mkp MB1                    &lt SYM SPACE   &mo ACT     &tog FUNC
                         >;
@@ -58,8 +58,8 @@
 
                 number_layer {
                         bindings = <
-        &trans          &trans          &trans          &trans          &trans              &kp MINUS       &kp N7          &kp N8      &kp N9             &kp BSPC
-        &trans          &trans          &trans          &trans          &trans              &kp DOT         &kp N4          &kp N5      &kp N6             &kp RET
+        &trans          &trans          &kp UP          &trans          &trans              &kp MINUS       &kp N7          &kp N8      &kp N9             &kp BSPC
+        &trans          &kp LEFT        &kp DOWN        &kp RIGHT       &trans              &kp DOT         &kp N4          &kp N5      &kp N6             &kp RET
         &trans          &trans          &trans          &trans          &trans              &kp N0          &kp N1          &kp N2      &kp N3             &trans
                                         &trans          &trans          &trans              &trans          &trans          &trans
                         >;
@@ -67,9 +67,9 @@
 
                 function_layer {
                         bindings = <
-        &kp F1          &kp F1          &kp F1          &kp F1          &kp F1              &trans          &trans          &trans          &trans          &trans
-        &kp F1          &kp F1          &kp F1          &kp F1          &kp F1              &trans          &trans          &trans          &trans          &trans
-        &trans          &kp F1          &kp F1          &trans          &trans              &trans          &trans          &trans          &trans          &trans
+        &kp F1          &kp F2          &kp F3          &kp F4          &kp F5              &trans          &trans          &trans          &trans          &trans
+        &kp F6          &kp F7          &kp F8          &kp F9          &kp F10              &trans          &trans          &trans          &trans          &trans
+        &trans          &kp F11         &kp F12         &trans          &trans              &trans          &trans          &trans          &trans          &trans
                                         &trans          &trans          &trans              &trans          &trans          &trans
                         >;
                 };
