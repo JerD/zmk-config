@@ -32,27 +32,27 @@
 
                 default_layer {
                         bindings = <
-        &kp Q           &kp W           &lt SYM E       &lt ACT R   &kp T                       &kp Y           &lt ACT U   &lt SYM I   &kp O           &kp P   
-        &kp A           &hm LSHIFT S    &hm LCTRL D     &hm LALT F  &hm LGUI G                  &hm LGUI H      &hm RALT J  &hm LCTRL K &hm RSHIFT L    &hm LS(N2) SQT
-        &kp LSHFT       &kp Z           &kp X           &kp C       &kp V                       &kp B           &kp N       &kp M       &mt COMMA DOT   &kp DOT
-                                        &tog NUM        &mkp MB2    &mkp MB1                    &lt SYM SPACE   &mo ACT     &tog FUNC
+        &kp Q           &kp W           &lt SYM E       &lt ACT R   &kp T                   &kp Y           &lt ACT U   &lt SYM I   &kp O           &kp P   
+        &kp A           &hm LSHIFT S    &hm LCTRL D     &hm LALT F  &hm LGUI G              &hm LGUI H      &hm RALT J  &hm LCTRL K &hm RSHIFT L    &hm LS(N2) SQT
+        &kp LSHFT       &kp Z           &kp X           &kp C       &kp V                   &kp B           &kp N       &kp M       &mt COMMA DOT   &kp DOT
+                                        &tog NUM        &mkp MB2    &mkp MB1                &lt SYM SPACE   &mo ACT     &tog FUNC
                         >;
                 };
                 action_layer {
                         bindings = <
-        &kp ESC         &kp W           &kp END         &kp R       &kp T                       &kp Y       &kp U       &kp UP      &kp DEL         &kp BSPC   
-        &kp TAB         &mt LSHIFT S    &kp LCTRL       &kp LALT    &kp LGUI                    &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT       &kp RET
-        &kp LSHFT       &kp Z           &kp X           &kp C       &kp V                       &kp B       &kp N       &kp M       &kp COMMA       &kp DOT
-                                        &kp LGUI        &trans      &trans                      &trans      &trans      &kp RALT
+        &kp ESC         &kp K_BACK      &kp END         &kp K_FORWARD   &kp T               &kp Y       &kp U       &kp UP      &kp DEL         &kp BSPC   
+        &kp TAB         &mt LSHIFT S    &kp LCTRL       &kp LALT        &kp LGUI            &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT       &kp RET
+        &kp LSHFT       &kp Z           &kp X           &kp C           &kp V               &kp B       &kp N       &kp M       &kp COMMA       &kp DOT
+                                        &kp LGUI        &trans          &trans              &trans      &trans      &kp RALT
                         >;
                 };
 
                 symbol_layer {
                         bindings = <
-        &kp QMARK       &kp PLUS        &kp EQUAL       &kp LS(N8)              &kp LS(NUHS)                &kp RA(N4)  &kp UNDER   &mt RBKT LBKT   &kp PIPE                &mt LS(N0) LS(N9)
-        &kp LS(N7)      &kp SEMI        &kp LS(N4)      &mt BSLH FSLH           &kp GRAVE                   &kp NUHS    &none       &kp COLON       &mt LS(DOT) LS(COMMA)   &kp LS(N2)
-        &kp LSHFT       &kp LS(N5)      &kp LS(SQT)     &mt LS(RBKT) LS(LBKT)   &kp LS(N6)                  &kp B       &kp LS(N1)  &kp MINUS       &kp LS(COMMA)           &kp LS(DOT)
-                                        &kp LGUI        &trans                  &trans                      &trans      &trans      &kp RALT
+        &kp QMARK       &kp PLUS    &kp EQUAL   &kp LS(N8)              &kp LS(NUHS)        &kp RA(N4)  &kp UNDER   &mt RBKT LBKT   &kp PIPE                &mt LS(N0) LS(N9)
+        &kp LS(N7)      &kp SEMI    &kp LS(N4)  &mt BSLH FSLH           &kp GRAVE           &kp NUHS    &none       &kp COLON       &mt LS(DOT) LS(COMMA)   &kp LS(N2)
+        &kp LSHFT       &kp LS(N5)  &kp LS(SQT) &mt LS(RBKT) LS(LBKT)   &kp LS(N6)          &kp B       &kp LS(N1)  &kp MINUS       &kp LS(COMMA)           &kp LS(DOT)
+                                    &kp LGUI    &trans                  &trans              &trans      &trans      &kp RALT
                         >;
                 };
 
@@ -68,7 +68,7 @@
                 function_layer {
                         bindings = <
         &kp F1          &kp F2          &kp F3          &kp F4          &kp F5              &trans          &trans          &trans          &trans          &trans
-        &kp F6          &kp F7          &kp F8          &kp F9          &kp F10              &trans          &trans          &trans          &trans          &trans
+        &kp F6          &kp F7          &kp F8          &kp F9          &kp F10             &trans          &trans          &trans          &trans          &trans
         &trans          &kp F11         &kp F12         &trans          &trans              &trans          &trans          &trans          &trans          &trans
                                         &trans          &trans          &trans              &trans          &trans          &trans
                         >;
