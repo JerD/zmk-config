@@ -40,7 +40,7 @@
                 };
                 action_layer {
                         bindings = <
-        &kp ESC         &kp C_AC_BACK   &kp END         &kp C_AC_FORWARD &kp T               &kp Y       &kp U       &kp UP      &kp DEL         &kp BSPC   
+        &kp ESC         &mkp MB4        &kp END         &mkp MB5        &kp T               &kp Y       &kp U       &kp UP      &kp DEL         &kp BSPC   
         &kp TAB         &mt LSHIFT S    &kp LCTRL       &kp LALT        &kp LGUI            &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT       &kp RET
         &kp LSHFT       &kp Z           &kp X           &kp C           &kp V               &kp B       &kp N       &kp M       &kp COMMA       &kp DOT
                                         &kp LGUI        &trans          &trans              &trans      &trans      &kp RALT
@@ -50,8 +50,8 @@
                 symbol_layer {
                         bindings = <
         &kp QMARK       &kp PLUS    &kp EQUAL   &kp LS(N8)              &kp LS(NUHS)        &kp RA(N4)  &kp UNDER   &mt RBKT LBKT   &kp LS(NUBS)            &mt LS(N0) LS(N9)
-        &kp LS(N7)      &kp SEMI    &kp LS(N4)  &mt BSLH NUBS           &kp GRAVE           &kp NUHS    &none       &kp COLON       &mt LS(DOT) LS(COMMA)   &kp LS(N2)
-        &kp LSHFT       &kp LS(N5)  &kp LS(SQT) &mt LS(RBKT) LS(LBKT)   &kp LS(N6)          &kp B       &kp LS(N1)  &kp MINUS       &kp LS(COMMA)           &kp LS(DOT)
+        &kp LS(N7)      &kp SEMI    &kp LS(N4)  &mt BSLH FSLH           &kp GRAVE           &kp NUHS    &none       &kp COLON       &mt LS(DOT) LS(COMMA)   &kp LS(N2)
+        &kp LSHFT       &kp LS(N5)  &kp LS(SQT) &mt LS(RBKT) LS(LBKT)   &kp LS(N6)          &kp B       &kp LS(N1)  &kp MINUS       &kp COMMA               &kp LS(DOT)
                                     &kp LGUI    &trans                  &trans              &trans      &trans      &kp RALT
                         >;
                 };
