@@ -35,6 +35,7 @@
         &kp TAB     &kp A       &kp S       &hm LCTRL D &hm LALT F  &hm LGUI G          &hm LGUI H      &hm RALT J  &hm LCTRL K &kp L           &kp SEMI    &kp SQT
         &kp LSHFT   &kp NUBS    &kp Z       &kp X       &kp C       &kp V               &kp B           &kp N       &kp M       &kp COMMA       &kp DOT     &kp FSLH    
                                             &mo FUNC    &mo NUM     &mo ACT             &lt SYM SPACE   &mo ACT     &kp RALT
+                                                                    &mkp MB1            &kp LG(UP)                                    
             >;
         };
         
@@ -44,6 +45,7 @@
         &trans      &trans      &mkp MB3    &mkp MB2    &mkp MB1        &trans              &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &kp RET
         &trans      &trans      &trans      &trans      &trans          &trans              &trans      &trans      &trans      &trans      &trans      &trans
                                             &trans      &trans          &trans              &trans      &trans      &trans
+                                                                        &trans              &trans
             >;
         };
 
@@ -53,6 +55,8 @@
         &trans  &kp LS(N7)  &mt RBKT LBKT   &kp LS(N4)  &mt NUBS FSLH           &kp GRAVE               &kp NUHS    &trans      &trans      &trans  &trans              &trans
         &trans  &trans      &kp LS(N5)      &kp LS(SQT) &mt LS(RBKT) LS(LBKT)   &kp LS(N6)              &trans      &kp LS(N1)  &kp MINUS   &trans  &trans              &trans
                                             &trans      &trans                  &trans                  &trans      &trans      &trans
+                                                                                &trans                  &trans
+
             >;
         };
 
@@ -62,6 +66,7 @@
         &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT       &trans              &kp DOT         &kp N4      &kp N5      &kp N6      &kp LS(N5)  &kp RET
         &trans      &trans      &trans      &trans      &trans          &trans              &kp N0          &kp N1      &kp N2      &kp N3      &trans      &trans
                                             &trans      &trans          &trans              &trans          &trans      &trans
+                                                                        &trans              &trans
             >;
         };
 
@@ -71,6 +76,7 @@
         &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT       &trans              &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
         &trans      &trans      &trans      &trans      &trans          &trans              &trans      &trans      &trans      &trans      &trans      &trans
                                             &trans      &trans          &trans              &trans      &trans      &trans
+                                                                        &trans              &trans
             >;
         };
     };
