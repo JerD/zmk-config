@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "corne.dtsi"
+#include "cornedongle.dtsi"
 
 &kscan1 {
     col-gpios

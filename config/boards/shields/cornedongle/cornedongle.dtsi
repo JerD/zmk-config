@@ -26,7 +26,7 @@
     };
 
     kscan0:  kscan_composite {
-      compatible = "zmk,kscan-composite";
+        compatible = "zmk,kscan-composite";
 
         // Include the matrix driver
         matrix {
@@ -42,9 +42,9 @@
 
     kscan1: kscan_matrix {
         compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
         wakeup-source;
 
-        diode-direction = "col2row";
         row-gpios = 
             <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
             <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
@@ -56,7 +56,8 @@
      kscan2: kscan_direct {
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
-        input-gpios = <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        input-gpios = 
+            <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         debounce-press-ms = <5>;
         debounce-release-ms = <5>;
     };
