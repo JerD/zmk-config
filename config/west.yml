@@ -5,7 +5,7 @@ manifest:
 
     # badjeff remote for pmw3610 driver
     - name: badjeff
-    url-base: https://github.com/badjeff
+      url-base: https://github.com/badjeff
     
   projects:
     - name: zmk
