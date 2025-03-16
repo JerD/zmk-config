@@ -12,7 +12,7 @@
                 DEF_layer {
 
                       bindings = <
-                            &mkp LCLK
+                            &kp Q
                         >;
                 };
        };
